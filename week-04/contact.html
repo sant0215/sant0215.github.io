@@ -53,37 +53,49 @@
 
             <section>
                 <h3>We'd love to hear from you!</h3>
-                <p>Send us a message!</p>
+                <!-- Adding a form -->
+                <form action="thanks.html" method="post">
+                    <div>
+                        <label for="fullname">Your Name&colon;</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" value="Mr. ">
+                    </div>
+                    <div>
+                        <label for="youremail">Email&colon;</label>
+                        <input type="email" id="youremail" name="youremail" required>
+                    </div>
+                    <div>
+                        <label for="message">Message&colon;</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div>
+                        <label for="tickets">How many tickets? (sold in pairs)</label>
+                        <input type="number" name="tickets" id="tickets" min="2" max="10" step="2">
+                    </div>
+                    <div>
+                        <label for="row">Select Row&colon;</label>
+                        <select name="row" id="row">
+                            <option value="front">Front</option>
+                            <option value="centre" selected>Centre</option>
+                            <option value="back">Back</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h3>Have you been here before?</h3>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="past">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="past">
+                    </div>
+                    <div>
+                        <h3>Policies</h3>
+                        <input type="checkbox" name="policies" id="policies" required>
+                        <label for="policies">I agree with the Terms and Policies</label>
+                    </div>
+
+                    <button type="submit">Sign me up!</button>
+                </form>
             </section>
 
-            <!-- Table for shop menu -->
-            <section>
-                <h3>Menu Specials</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Items</th>
-                            <th rowspan="2">Price</th>
-                        </tr>
-                        <tr>
-                            <th>Name</th>
-                            <th>Calories</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Banana Bread</td>
-                            <td>250</td>
-                            <td>&dollar;6</td>
-                        </tr>
-                        <tr>
-                            <td>Oatmeal</td>
-                            <td>110</td>
-                            <td>&dollar;8</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
         </main>
 
         <!-- Site footer -->
