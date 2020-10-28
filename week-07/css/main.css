@@ -265,3 +265,13 @@ section p {
 
     border-bottom: 2px solid black;
 }
+
+/* Adding borders as separators */
+
+aside ul li {
+    border-bottom: 1px solid black;
+}
+
+aside ul li:last-child {
+    border:none;
+}
