@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document information -->
+    <meta charset="UTF-8">
+    <title>Tootsie Bells - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+ 
+  <body>
+    <!-- Document Content -->
+    <!-- main container to centre content -->
+    <div class="container">
+
+      <!-- site header -->
+      <header>
+        <h1>Tootsie Bells</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Story</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- site main content -->
+      <main>
+        <article>
+          <h2>
+            Hi, I'm Tootsie
+          </h2>
+          <img src="images/tootsie-pic.jpg" alt="Photo of Tootsie">
+          <p>
+            And no, my last name isn't actually Bells. That's just a nickname my uncle gave me. I am a dachshund-pinscher mix but humans tend to mistake me for just a weenie dog with floppy ears. I cry a lot. Like a whole lot. Dad falls for it which is great, so I can get all the chicken I want. Yea. I really <span style="font-weight:bold">love</span> chicken. Mom once said my butt was going to grow wings from all the chicken I eat but nothing's happened yet. I'm still waiting. I chased a bird once. My sister tried catching me but I ran as fast as I could and when I was cornered, I swallowed the bird whole. It was great! Ever since that, she called me "bird-eater." Nowadays, I can't really run anymore. I'm 10 years old now and I'm a lot heavier than I've ever been. I just can't stop eating chicken! And I can't stop asking for more. Did I mention I really <span style="font-weight:bold">love</span> chicken? I can't stop thinking about it. I also like to watch TV with my dad on the couch. I love the couch, it's so soft and perfect for me. I once pushed my sister off the couch so a stranger could pet me a lot. Mom doesn't like it though, says I leave all my hair all over it. I think everyone but dad is allergic to me, but I don't really mind. Dad is my favourite human. Please pet me? I really like pets and belly rubs. I promise I won't bite. Not that I do anyway. I'm too lazy to actually get mad at you, so I make a terrible guard dog. I only bark when I'm begging dad for food, which is every dinner and second dinner. I'm so happy dad is always home now, so I get to take naps with him all day and sleep beside him every night. I like to sleep a lot. It's my favourite hobby next to eating. Mom scares me and I don't like my sisters especially when they give me baths. Baths are scary. Send me pets ok?
+          </p>
+          <section>
+            <h3>Facts about Tootsie</h3>
+            <!-- Facts - Use proper syntax for listing the facts -->
+            <ul>
+              <li>My favourite food is chicken, beef, pork, chicken, chicken and pizza.</li>
+              <li>Fireworks don't faze me anymore. I'm too lazy so I just sleep through New Years.</li>
+              <li>I weigh more than a 3-year old human child. We counted. No, I'm not gonna tell you the number.</li>
+              <li>I sleep an average of 27 hours a day, and take naps for 5 more hours.</li>
+            </ul>
+          </section>
+        </article>
+        
+
+        <!-- contact section 
+        Form - All the inputs must be linked to the relative labels.-->
+        <section id="contact">
+          <h3>Send Tootsie a message</h3>
+          <form action="thanks.html" method="post">
+            <div>
+              <label for="fullname">Your Name</label>
+              <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div>
+              <label for="youremail">Your Email</label>
+              <input type="email" id="youremail" name="youremail" required>
+            </div>
+            <div>
+              <label for="message">Your Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <h4>Would you pet Tootsie?</h4>
+            <div>
+              <label for="yes">Yes</label>
+              <input type="radio" id="yes" name="pet">
+              <label for="yes-bold"><span style="color:red">Yes, but in red</span></label>
+              <input type="radio" id="yes-bold" name="pet">
+              <label for="yes-rub">Yes, and belly rubs too</label>
+              <input type="radio" id="yes-rub" name="pet">
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+      <!-- site footer -->
+      <footer>
+        &copy; Tootsie Bells.
+      </footer>
+    </div>
+  </body>
+</html>
