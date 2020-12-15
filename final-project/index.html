@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- ICON FONTS -->
     <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>Welcome to Three Star Media</title>
 </head>
 
@@ -16,7 +21,9 @@
             <!-- TOP MENU AREA -->
             <div class="top-menu">
                 <div class="container">
-                    <img src="images/logo.png" alt="Three Star Media Logo" class="logo-image">
+                    <div class="nav-logo">
+                        <img src="images/logo.png" alt="Three Star Media Logo" class="logo-image">
+                    </div>
                     <nav class="main-nav">
                         <!-- MAVIGATION -->
                         <ul class="nav-list">
@@ -31,19 +38,24 @@
                     <form action="#" method="GET" class="searchbar">
                         <label for="searchquery">Search</label>
                         <input type="text" id="searchquery" name="searchquery" placeholder="Search...">
-                        <button type="submit"><i class="im im-magnifier"></i></button>
+                        <button type="submit" class="searchbutton"><i class="im im-magnifier"></i></button>
                     </form>
                 </div>
             </div>
             <div class="banner">
-                <img src="images/main-banner.jpg" alt="Main Banner">
+                <!-- <img src="images/main-banner.jpg" alt="Main Banner"> -->
                 <!-- BANNER IMAGE WILL BE APPLIED LATER THROUGH CSS -->
+
                 <div class="container">
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ut aut consequatur cupiditate
-                        dignissimos sit voluptatum iure cumque deleniti qui blanditiis, quae sequi quia tempora corrupti
-                        labore accusantium laudantium! Cupiditate.</p>
-                    <a href="#" class="btn">Connect with us <i class="im im-care-right"></i></a>
+                    <div class="bannerbox">
+                        <h1>Welcome to Three Star Media</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ut aut consequatur
+                            cupiditate
+                            dignissimos sit voluptatum iure cumque deleniti qui blanditiis, quae sequi quia tempora
+                            corrupti
+                            labore accusantium laudantium! Cupiditate.</p>
+                        <a href="#" class="btn">Connect with us <i class="im im-care-right"></i></a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -58,6 +70,12 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quasi eius voluptate incidunt
                             maiores velit? Sed praesentium amet quam minus, assumenda odit exercitationem sit ducimus
                             hic, architecto beatae rem iure.</p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quaerat. Autem dicta
+                            voluptates accusamus assumenda obcaecati illum, sequi laboriosam voluptatibus quod
+                            repudiandae at necessitatibus, totam esse quam incidunt cupiditate alias?
+                        </p>
                     </div>
                 </div>
             </section>
@@ -65,52 +83,66 @@
             <section id="our-services">
                 <div class="container">
                     <h2>Our Services</h2>
-                    <div class="services-box">
+                    <div class="services-box digital">
                         <img src="images/digital.jpg" alt="Digital Transformation">
-                        <h3>Digital Transformation</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim temporibus eos nam at,
-                            distinctio doloribus repellat, dolore quis sequi quasi impedit inventore facere deleniti.
-                            Soluta, odit. Rerum quo nulla dicta?</p>
-                        <a href="#" class="btn">Digital Plans <i class="im im-care-right"></i></a>
+                        <div class="services-text">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim temporibus eos nam at,
+                                distinctio doloribus repellat, dolore quis sequi quasi impedit inventore facere
+                                deleniti.
+                                Soluta, odit. Rerum quo nulla dicta?</p>
+                            <a href="#" class="btn">Digital Plans <i class="im im-care-right"></i></a>
+                        </div>
                     </div>
-                    <div class="services-box">
+                    <div class="services-box marketing">
                         <img src="images/marketing.jpg" alt="Marketing">
-                        <h3>Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora fuga possimus error
-                            officiis sunt. Facilis reprehenderit doloribus iure quo, sint nisi ullam? Eum neque magni
-                            facilis illum laborum nulla?</p>
-                        <a href="#" class="btn">Marketing <i class="im im-care-right"></i></a>
+                        <div class="services-text">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis tempora fuga possimus
+                                error
+                                officiis sunt. Facilis reprehenderit doloribus iure quo, sint nisi ullam? Eum neque
+                                magni
+                                facilis illum laborum nulla?</p>
+                            <a href="#" class="btn">Marketing Plans <i class="im im-care-right"></i></a>
+                        </div>
                     </div>
-                    <div class="services-box">
+                    <div class="services-box video">
                         <img src="images/video.jpg" alt="Video Production">
-                        <h3>Video Production</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel debitis a amet, et
-                            quidem incidunt. Asperiores amet quos aperiam quod minus autem, sint accusantium atque,
-                            praesentium eos neque nostrum?</p>
-                        <a href="#" class="btn">Video Production <i class="im im-care-right"></i></a>
+                        <div class="services-text">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel debitis a amet, et
+                                quidem incidunt. Asperiores amet quos aperiam quod minus autem, sint accusantium
+                                atque,molestiae sint facere qui odio dolores usto praesentium eos neque nostrum?</p>
+                            <a href="#" class="btn">Video Plans <i class="im im-care-right"></i></a>
+                        </div>
                     </div>
-                    <div class="services-box">
+                    <div class="services-box web">
                         <img src="images/web.jpg" alt="Web Development">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eius quas animi ipsam! Aut,
-                            quod, suscipit quis, molestiae sint facere qui odio dolores iusto reiciendis ad odit? Ad,
-                            earum autem.</p>
-                        <a href="#" class="btn">Web Development <i class="im im-care-right"></i></a>
+                        <div class="services-text">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit eius quas animi ipsam!
+                                Aut,
+                                quod, suscipit quis, molestiae sint facere qui odio dolores iusto reiciendis ad odit?
+                                Ad, iusto reiciendis molestiae sint facere qui odio dolores iusto earum autem.</p>
+                            <a href="#" class="btn">Web Plans <i class="im im-care-right"></i></a>
+                        </div>
                     </div>
-                    <div class="services-box">
+                    <div class="services-box print">
                         <img src="images/print.jpg" alt="Print">
-                        <h3>Print</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium tenetur cupiditate
-                            minus quas eveniet porro molestias accusamus quo id error aut dolorem explicabo officia,
-                            dignissimos hic nam magnam laboriosam incidunt.</p>
-                        <a href="#" class="btn">Print <i class="im im-care-right"></i></a>
+                        <div class="services-text">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium tenetur cupiditate
+                                minus quas eveniet porro molestias accusamus quo id error aut dolorem explicabo officia,
+                                dignissimos hic nam magnam laboriosam incidunt.</p>
+                            <a href="#" class="btn">Print Plans <i class="im im-care-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- OUR VISION -->
             <!-- BACKGROUND IMAGE WILL BE APPLIED LATER THROUGH CSS -->
             <section class="our-vision">
-                <img src="images/vision.jpg" alt="Our Vision">
+                <!-- <img src="images/vision.jpg" alt="Our Vision"> -->
                 <div class="container">
                     <h2>Our Vision</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus, et, placeat
@@ -126,7 +158,7 @@
                     <div class="team-box">
                         <img src="images/john.jpg" alt="John Doe">
                     </div>
-                    <div class="team-box">
+                    <div class="team-box team-text">
                         <h3>John Doe</h3>
                         <p class="job-title">CEO and Co-owner</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita voluptatem
@@ -136,7 +168,7 @@
                     <div class="team-box">
                         <img src="images/bob.jpg" alt="Bob Rite">
                     </div>
-                    <div class="team-box">
+                    <div class="team-box team-text">
                         <h3>Bob Rite</h3>
                         <p class="job-title">CFO and Co-Owner</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quaerat commodi cumque, et
@@ -149,29 +181,32 @@
             <section id="contact-us">
                 <div class="container">
                     <h2>Contact Us</h2>
-                    <h3>Send us a message</h3>
                     <!-- CONTACT FORM -->
                     <div class="contact-form">
+                        <h3>Send us a message</h3>
                         <form action="#" method="post">
-                            <div>
-                                <label for="fullname">Full Name</label>
-                                <input type="text" id=fullname>
-                            </div>
-                            <div>
-                                <label for="youremail">Email</label>
-                                <input type="email" id="youremail">
-                            </div>
-                            <div>
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message"></textarea>
+                            <div class="contact-box">
+                                <div>
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id=fullname>
+                                </div>
+                                <div>
+                                    <label for="youremail">Email</label>
+                                    <input type="email" id="youremail">
+                                </div>
+                                <div>
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
                             </div>
                             <button type="submit">Send</button>
                         </form>
                     </div>
+
                     <!-- OPERATION TABLE -->
                     <div class="operation">
                         <h3>Hours of Operation</h3>
-                        <table>
+                        <table class="hours-table">
                             <thead>
                                 <tr>
                                     <th>Days</th>
