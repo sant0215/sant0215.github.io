@@ -371,6 +371,11 @@ footer a:visited {
 
 
     /* HEADER */
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
     .top-menu .container {
         display: grid;
         grid-template-columns: 0.8fr 3fr 1.2fr;
