@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* This is the end of CSS reset */
+
+/* ---------------------
+Custom CSS starts here 
+------------------------*/
+
+
+/* Changing global text styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9ED8DB;
+}
+
+p {
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+/* Makes the whole site occupy the browser's full width */
+main#main {
+    max-width: 100%;
+}
+
+
+/* This overrides the current navbar style while also fixing it in place. */
+nav#nav {
+    width: 100%;
+    padding: 2em 0;
+    margin: 0;
+    border: none;
+    background-color: #D64045;
+    position: fixed;
+}
+
+.nav a.nav-link {
+    margin: 0;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0.4em;
+}
+
+
+/* Styles for Home section: changing background colour, H1 and paragraph styles  */
+
+section#home {
+    height: 812px;
+    background-color: #1D3354;
+    padding: 100px 30px;
+    font-family: inherit;
+}
+
+h1.page-title {
+
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: left;
+    margin: 100px 0 30px 0;
+}
+
+
+
+
+
+section#about {
+    background-color: #E9FFF9;
+    color: inherit;
+    padding: 100px 50px;
+}
+
+h2.section-title {
+    text-align: inherit;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #1D3354;
+}
+
+.about p {
+    clear: left;
+    background-color: #9ED8DB;
+    color: #1D3354;
+    font-size: 1rem;
+    padding: 1.2em;
+}
+
+
+
+section#contact {
+    background-color: #467599;
+    padding: 0;
+    padding: 100px 30px;
+}
+
+.contact p {
+    font-size: inherit;
+    margin: 1em 0;
+}
+
+form.contact-form {
+    background-color: #9ED8DB;
+    width: auto;
+    padding: 1.5em;
+}
+
+label.contact-form-label {
+    font-size: 1rem;
+    color: #1D3354;
+}
+
+input.contact-form-input, textarea.contact-form-input {
+    padding: 0;
+    margin: 0.5em 0;
+    height: 2rem;
+    border: none;
+    background-color: #E9FFF9;
+    margin: 1em 0;
+    resize: vertical;
+}
+
+textarea.contact-form-input {
+    height: 5rem;
+}
+
+button {
+    width: 100%;
+    height: 3em;
+    border: none;
+    background-color: #D64045;
+    color: white;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+/* TODO
+Contact Us width & colours
+footer
+ipad and desktop styles
+comments*/
