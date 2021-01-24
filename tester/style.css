@@ -52,6 +52,7 @@ table {
 Custom CSS starts here 
 ------------------------*/
 
+/* ------- MOBILE STYLES-------- */
 
 /* Changing global text styles */
 body {
@@ -81,6 +82,7 @@ nav#nav {
     position: fixed;
 }
 
+/* navbar text styles */
 .nav a.nav-link {
     margin: 0;
     color: white;
@@ -98,29 +100,22 @@ nav#nav {
 section#home {
     height: 812px;
     background-color: #1D3354;
-    padding: 100px 30px;
+    padding: 150px 30px 0px 30px;
     font-family: inherit;
 }
 
+
+/* Overall style of "Hello" text */
 h1.page-title {
 
     color: white;
-    font-size: 4em;
+    font-size: 6rem;
     font-weight: bold;
     text-align: left;
     margin: 100px 0 30px 0;
 }
 
-
-
-
-
-section#about {
-    background-color: #E9FFF9;
-    color: inherit;
-    padding: 100px 50px;
-}
-
+/* Main style for all section headers */
 h2.section-title {
     text-align: inherit;
     font-weight: bold;
@@ -128,6 +123,14 @@ h2.section-title {
     color: #1D3354;
 }
 
+
+/* About section styles, changing background colour and spacing adjustments */
+section#about {
+    background-color: #E9FFF9;
+    padding: 100px 30px;
+}
+
+/* Using clear:left to prevent image from floating next to the paragraphs. */
 .about p {
     clear: left;
     background-color: #9ED8DB;
@@ -137,18 +140,19 @@ h2.section-title {
 }
 
 
-
+/* contact section background colour and fixing alignment issues */
 section#contact {
     background-color: #467599;
-    padding: 0;
     padding: 100px 30px;
 }
 
+/* resizes the paragraph text to be consistent with about us paragraphs */
 .contact p {
     font-size: inherit;
     margin: 1em 0;
 }
 
+/* fixes width of the contact form to not overflow */
 form.contact-form {
     background-color: #9ED8DB;
     width: auto;
@@ -160,7 +164,9 @@ label.contact-form-label {
     color: #1D3354;
 }
 
-input.contact-form-input, textarea.contact-form-input {
+/* textbox styles */
+input.contact-form-input,
+textarea.contact-form-input {
     padding: 0;
     margin: 0.5em 0;
     height: 2rem;
@@ -170,10 +176,12 @@ input.contact-form-input, textarea.contact-form-input {
     resize: vertical;
 }
 
+/* makes the message box bigger */
 textarea.contact-form-input {
     height: 5rem;
 }
 
+/* button styles for mobile */
 button {
     width: 100%;
     height: 3em;
@@ -183,11 +191,147 @@ button {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+/* changing footer alignment and background colour for consistency */
+footer {
+    background-color: #1D3354;
+    padding: 30px;
+}
+
+/* ------- END OF MOBILE STYLES -------- */
+
+
+/* ------- IPAD STYLES-------- */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+
+    /* Increases padding for home to be appropriate for iPad screens */
+    section#home {
+        height: 700px;
+        padding: 300px 130px 50px 130px;
+    }
+
+
+    /* Moves the "Hello" lower down the centre of the screen */
+    h1.page-title {
+        font-size: 7rem;
+        margin: 100px 0 30px 0;
+    }
+
+
+    /* Keeps the image on the centre while maintaining its position on top of the paragraphs */
+    img.about-image {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Universal styles for non-home sections */
+    section#about,
+    section#contact {
+        padding: 100px 130px 50px 130px;
+    }
+
+    footer {
+        background-color: #1D3354;
+        padding: 30px 130px;
+    }
 
 }
 
-/* TODO
-Contact Us width & colours
-footer
-ipad and desktop styles
-comments*/
+/* ------- END OF IPAD STYLES-------- */
+
+
+/* ------- DESKTOP STYLES -------- */
+
+@media screen and (min-width:1023px) {
+
+    /* Sets universal padding for all sections */
+    section#home,
+    section#about,
+    section#contact {
+        padding: 100px 150px;
+    }
+
+    /* Makes the home section occupy the full height of the screen */
+    section#home {
+        height: 800px;
+    }
+
+    /* Increases size of "Hello" for desktop view */
+    h1.page-title {
+        font-size: 8rem;
+        margin: 150px 0 30px 0;
+    }
+
+
+    /* Universal styles for section headers */
+    h2.section-title {
+        font-weight: bold;
+        font-size: 4rem;
+        margin: 0 0 30px 0;
+    }
+
+    /* Increases size of Home paragraph text while keeping it only up to 80% the total width of the screen */
+    .home p {
+        max-width: 80%;
+        font-size: 2rem;
+    }
+
+    /* Adjusts line height for about and contact sections */
+    .about p,
+    .contact p {
+        line-height: 2em;
+    }
+
+    /* Floats the header to the left so the image can be on the same line to its right */
+    .about h2 {
+        float: left;
+    }
+
+    /* Floats the image to the other end of the block while maintaining its size regardless of monitor size */
+    img.about-image {
+        width: 360px;
+        float: right;
+    }
+
+    /* Uses clear to ensure floating elements do not overlap with the paragraphs */
+    .about p {
+        font-size: 1.4rem;
+        clear: both;
+    }
+
+    /* Applies css clearfix to the contents of contact section to prevent overflow of elements */
+    section#contact::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    /* Keeps the contact paragraph to the left with the contact form on the right */
+    .contact p {
+        width: 50%;
+        float: left;
+        font-size: 1.3rem
+    }
+
+    /* Moves the contact form to the right for desktop view */
+    form.contact-form {
+        width: 40%;
+        float: right;
+    }
+
+    /* Moves the button to the bottom right of the form while also limiting its width to not be too wide for desktop view */
+    button {
+        width: 200px;
+        float: right;
+    }
+
+    footer {
+        padding: 30px 150px;
+    }
+
+}
