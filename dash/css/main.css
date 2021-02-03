@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------------- CUSTOM STYLES START HERE */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: #333131;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    padding: 36px;
+}
+
+.mainbanner {
+    background-color: #F7F7FF;
+}
+
+.logo {
+    width: 120px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 72px;
+}
+
+.headercopy {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 10px 0;
+}
+
+img {
+    margin: 15px 0;
+}
+
+.applybox {
+    background-color: #FFFFFF;
+    border-radius: 26px;
+    padding: 25px;
+    box-shadow: 5px 10px 15px rgba(51, 49, 49, 0.4);
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+label[for="firstname"],
+label[for="lastname"],
+label[for="phone"],
+label[for="emailadd"],
+label[for="hours"],
+label[for="city"] {
+    display: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    border: none;
+    background-color: #F4F4F5;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: inherit;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 11px;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border-radius: 11px;
+    vertical-align: middle;
+}
+
+button {
+    width: 100%;
+    height: 55px;
+    border: none;
+    background-color: #57EEAB;
+    border-radius: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: inherit;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.applybox p:last-child {
+    font-size: 14px;
+}
+
+a, a:link, a:visited {
+    color: #FF8480;
+    text-decoration: none;
+}
+
+footer  {
+    background-color: #FFFD8C;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hourscity {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+
+.calculator button {
+    height: 40px;
+    background-color: #FF8480;
+    color: white;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* TODO: Clean up code and add comments */

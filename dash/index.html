@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Installs Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Dash - Home</title>
+</head>
+
+<body>
+    <!-- This ensures backgrounds remain at 100% width while keeping content contained within a bounding box. -->
+
+    <!-- TODO: COMMENTS -->
+    <div class="wrapper">
+        <main>
+            <section class="mainbanner">
+            <div class="container">
+                <img src="images/logo.png" alt="Dash Logo" class="logo">
+                <h1>Want to be your own boss?</h1>
+                <p class="headercopy">Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+                <img src="images/scooter.svg" alt="Dash Driver" class="scooter">
+                <div class="applybox">
+                    <h2>Apply Now</h2>
+                    <p>Enter your info below.</p>
+                    <form class="application" action="#" method="post">
+                        <div>
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname" placeholder="First name">
+                        </div>
+                        <div>
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname" placeholder="Last name">
+                        </div>
+                        <div>
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" placeholder="Phone number">
+                        </div>
+                        <div>
+                            <label for="emailadd">Email Address</label>
+                            <input type="email" id="emailadd" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms">I agree to Dash terms.</label>
+                        </div>
+
+
+                        <button type="submit">Drive with us</button>
+                    </form>
+                    <p>Already applied? <a href="#">Check your application status here.</a></p>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <div class="container">
+                <h3>See how much you can earn with Dash.</h3>
+                <p>How many hours do you want to drive with us this week?</p>
+                <form action="#" class="calculator">
+                    <div class="hourscity">
+                        <div>
+                            <label for="hours">Hours</label>
+                            <input type="text" id="hours" placeholder="Hours">
+                        </div>
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="City">
+                        </div>
+                    </div>
+                        
+                    <button type="submit">Calculate</button>
+                </form>
+
+                
+            <ul class="socialmedia">
+                <li>
+                    <a href="#"><img src="icons/facebook.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="icons/instagram.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="icons/twitter.svg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="icons/linkedin.svg" alt=""></a>
+                </li>
+            </ul>
+
+        </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
