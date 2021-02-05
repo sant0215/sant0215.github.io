@@ -15,20 +15,22 @@
 </head>
 
 <body>
-    <!-- This wrapper ensures backgrounds remain at 100% width while keeping content contained within a bounding box. -->    
+    <!-- This wrapper ensures backgrounds remain at 100% width -->    
     <div class="wrapper">
         <main>
-            <section class="mainbanner">
+                <!-- container class will be used to control the content within a set bounding box -->
                 <div class="container">
                     <img src="images/logo.png" alt="Dash Logo" class="logo">
+                    <!-- The bannercontent class will serve as the table to align the banner items horizontally in desktop view. Banner items are titlebox, scooter image and applybox -->
                     <div class="bannercontent">
+                        <!-- titlebox serves as the main box for the banner text for grid purposes in desktop view -->
                         <div class="titlebox">
                             <h1>Want to be your own boss?</h1>
                             <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
                         </div>
                         <img src="images/scooter.svg" alt="Dash Driver" class="scooter">
+                        <!-- applybox is a box containing the form in the banner -->
                         <div class="applybox">
-
                             <h2>Apply Now</h2>
                             <p>Enter your info below.</p>
                             <form class="application" action="#" method="get">
@@ -58,15 +60,17 @@
                         </div>
                     </div>
                 </div>
-            </section>
         </main>
         <footer>
+
+            <!-- This container will not only keep the items within a specified area, but will also serve as a grid to align the footer items in desktop view. The two footer items are the hourscalc and socialmedia. -->
             <div class="container">
+
+                <!-- hourscalc will contain the calculator form as well as the copy text with it. -->
                 <div class="hourscalc">
                     <h3>See how much you can earn with Dash.</h3>
                     <p>How many hours do you want to drive with us this week?</p>
                     <form action="#" class="calculator" method="post"> 
-
                         <div>
                             <label for="hours">Hours</label>
                             <input type="text" id="hours" placeholder="Hours">
@@ -77,8 +81,9 @@
                         </div>
                         <button type="submit">Calculate</button>
                     </form>
-
                 </div>
+
+                <!-- socialmedia contains the 4 social media icons -->
                 <ul class="socialmedia">
                     <li>
                         <a href="#"><img src="icons/facebook.svg" alt=""></a>
@@ -99,5 +104,4 @@
     </div>
 
 </body>
-
 </html>

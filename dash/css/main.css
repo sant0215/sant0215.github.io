@@ -46,25 +46,30 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* CSS RESET-------- */
+
 
 /* ---------------- CUSTOM STYLES START HERE */
+
+
+/* MOBILE STYLES --------------------------- */
 
 html {
     font-family: 'Montserrat', sans-serif;
     color: #333131;
 }
 
-
-
+/* Ensures section colours retain full width of the browser */
 .wrapper {
     width: 100%;
 }
 
+/* The box that keeps all content within boundaries */
 .container {
     padding: 36px;
 }
 
-.mainbanner {
+main {
     background-color: #F7F7FF;
 }
 
@@ -93,6 +98,7 @@ p {
     margin: 15px 0;
 }
 
+/* Styling the Apply Now box */
 .applybox {
     background-color: #FFFFFF;
     border-radius: 26px;
@@ -106,6 +112,7 @@ h2 {
     padding: 10px 0;
 }
 
+/* Removes all labels for text inputs */
 label[for="firstname"],
 label[for="lastname"],
 label[for="phone"],
@@ -115,6 +122,7 @@ label[for="city"] {
     display: none;
 }
 
+/* Styling input bars and having them occupy full width of their container box */
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
@@ -130,10 +138,12 @@ input[type="email"] {
     border-radius: 11px;
 }
 
+/* Removes highlight outline when textboxes are selected */
 input:focus {
     outline: none;
 }
 
+/* Enlarges the checkbox to match the mockup (only works on Chrome when tested) */
 input[type="checkbox"] {
     width: 25px;
     height: 25px;
@@ -141,6 +151,7 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
+/* Defining button styles */
 button {
     width: 100%;
     height: 55px;
@@ -155,10 +166,12 @@ button {
     margin: 10px 0;
 }
 
+/* Shrinks the text below the "Drive with us" button */
 .applybox p:last-child {
     font-size: 14px;
 }
 
+/* Hyperlink styles */
 a,
 a:link,
 a:visited {
@@ -175,6 +188,8 @@ h3 {
     font-weight: bold;
 }
 
+
+/* The calculator form will be a grid that distributes the two textboxes  horizontally in the first row, and the button in the second row*/
 .calculator {
     display: grid;
     grid-template-columns: 30% 68%;
@@ -183,7 +198,7 @@ h3 {
     max-width: 100%;
 }
 
-
+/* Calculator button occupies the full width of the second row */
 .calculator button {
     height: 40px;
     background-color: #FF8480;
@@ -191,17 +206,25 @@ h3 {
     grid-column: 1 / 3;
 }
 
+/* Evenly distributes the social media icons */
 .socialmedia {
     padding: 30px 0;
     display: flex;
     justify-content: space-around;
 }
 
+/* END OF MOBILE STYLES---------------- */
 
-@media screen and (min-width:768px) and (max-width:1920px) {
+/* TABLET STYLES ---------------------- */
 
+
+@media screen and (min-width:768px) and (max-width:1399px) {
+
+    /* Limits the content to 900px for larger screens */
     .container {
         padding: 36px 82px;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     h1 {
@@ -209,10 +232,18 @@ h3 {
         line-height: 96px;
     }
 
+    /* display: block keeps the image centered */
     .scooter {
-        width: 420px;
+        width: 70%;
+        max-width: 600px;
         display: block;
         margin: 5% auto;
+    }
+
+    /* Limits the size of the application box as to not stretch too far out on larger screens */
+    .applybox {
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .applybox p:nth-child(2) {
@@ -223,12 +254,14 @@ h3 {
         text-align: center;
     }
 
+    /* Adjusts the calculator form table into 3 columns instead of 2*/
     .calculator {
         grid-template-columns: 20% 40% 1fr;
         grid-template-rows: 1fr;
         grid-gap: 15px;
     }
 
+    /* Moves the calculator button beside the textboxes */
     .calculator button {
         grid-column: 3 / 4;
     }
@@ -239,10 +272,16 @@ h3 {
 
 }
 
-@media screen and (min-width: 1920px) {
+/* END OF TABLET STYLES---------------- */
+
+/* DESKTOP STYLES ---------------------- */
+
+/* Note from Hannah: While the mockup used 1920px as the screen width, the gap between the tablet and desktop views was too large and the transition wasn't as smooth as I would've liked; so I am using a smaller breakpoint for the desktop view */
+@media screen and (min-width: 1400px) {
 
     .container {
         padding: 40px 140px;
+        max-width: none;
     }
 
     h1 {
@@ -250,6 +289,7 @@ h3 {
         line-height: 96px;
     }
 
+    /* Contains the 3 main banner elements into a grid with 5 differently-sized columns, because the items overlap with each other. */
     .bannercontent {
         display: grid;
         grid-template-columns: 25% 6% 37% 7% 25%;
@@ -258,24 +298,27 @@ h3 {
         margin: 30px 0;
     }
 
+    /* The banner text occupies columns 1 - 2 */
     .titlebox {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
 
-
+    /* Scooter image occupies columns 2 - 4. Max width is also limited to 800px as to not stretch the image too much on ultrawide screens*/
     .scooter {
         width: 100%;
         grid-column: 2 / 5;
         grid-row: 1 / 2;
-
+        max-width: 800px;
         margin: 0;
+        align-self: center;
     }
 
+    /* Apply Now box occupies columns 4 - 5. Max width is also limited to not stretch out the box */
     .applybox {
         grid-column: 4 / 6;
         grid-row: 1 / 2;
-
+        max-width: 520px;
     }
 
     .applybox p:nth-child(2) {
@@ -293,21 +336,26 @@ h3 {
         font-size: 15px;
     }
 
+    /* The footer area is laid out in a 3 x 1 grid that would distribute the calculator on the left side, and the social media icons on the right */
     footer .container {
         display: grid;
         grid-template-columns: 2fr 2fr 1fr;
         grid-template-rows: 1fr;
     }
 
+    /* Calculator box occupies column 1 */
     .hourscalc {
         grid-column: 1 / 2;
     }
 
+    /* Inside the calculator form is another grid, similar to its tablet view, that would lay the textboxes and the button horizontally */
     .calculator {
         grid-template-columns: 20% 40% 1fr;
         grid-template-rows: 1fr;
+        grid-gap: 2%;
     }
 
+    /* Aligns the calculator elements properly */
     .calculator input,
     .calculator button {
         height: 40px;
@@ -315,17 +363,16 @@ h3 {
         margin-bottom: auto;
     }
 
-
-    .socialmedia {
+    .calculator button {
         grid-column: 3 / 4;
-        padding: 0;
-        align-items: center;
-        justify-content: space-between;
-
     }
 
-    /* TODO: RECHECK CODE, CLEANUP AND COMMENT 
-   calculator alignment*/
+    /* Social media icons box occupies column 3*/
+    .socialmedia {
+        grid-column: 3 / 4;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 
 
