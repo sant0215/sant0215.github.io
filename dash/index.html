@@ -15,22 +15,23 @@
 </head>
 
 <body>
-    <!-- This ensures backgrounds remain at 100% width while keeping content contained within a bounding box. -->
-
-    <!-- TODO: COMMENTS -->
+    <!-- This wrapper ensures backgrounds remain at 100% width while keeping content contained within a bounding box. -->    
     <div class="wrapper">
         <main>
             <section class="mainbanner">
                 <div class="container">
                     <img src="images/logo.png" alt="Dash Logo" class="logo">
                     <div class="bannercontent">
-                        <h1>Want to be your own boss?</h1>
-                        <p class="headercopy">Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+                        <div class="titlebox">
+                            <h1>Want to be your own boss?</h1>
+                            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+                        </div>
                         <img src="images/scooter.svg" alt="Dash Driver" class="scooter">
                         <div class="applybox">
+
                             <h2>Apply Now</h2>
                             <p>Enter your info below.</p>
-                            <form class="application" action="#" method="post">
+                            <form class="application" action="#" method="get">
                                 <div>
                                     <label for="firstname">First name</label>
                                     <input type="text" id="firstname" placeholder="First name">
@@ -51,8 +52,6 @@
                                     <input type="checkbox" name="terms" id="terms">
                                     <label for="terms">I agree to Dash terms.</label>
                                 </div>
-
-
                                 <button type="submit">Drive with us</button>
                             </form>
                             <p>Already applied? <a href="#">Check your application status here.</a></p>
@@ -66,7 +65,7 @@
                 <div class="hourscalc">
                     <h3>See how much you can earn with Dash.</h3>
                     <p>How many hours do you want to drive with us this week?</p>
-                    <form action="#" class="calculator">
+                    <form action="#" class="calculator" method="post"> 
 
                         <div>
                             <label for="hours">Hours</label>
@@ -77,8 +76,6 @@
                             <input type="text" id="city" placeholder="City">
                         </div>
                         <button type="submit">Calculate</button>
-
-
                     </form>
 
                 </div>

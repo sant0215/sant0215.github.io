@@ -47,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
 /* ---------------- CUSTOM STYLES START HERE */
 
 html {
@@ -79,7 +78,7 @@ h1 {
     line-height: 72px;
 }
 
-.headercopy {
+.titlebox p {
     font-size: 24px;
     line-height: 29px;
 }
@@ -131,6 +130,10 @@ input[type="email"] {
     border-radius: 11px;
 }
 
+input:focus {
+    outline: none;
+}
+
 input[type="checkbox"] {
     width: 25px;
     height: 25px;
@@ -156,12 +159,14 @@ button {
     font-size: 14px;
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
     color: #FF8480;
     text-decoration: none;
 }
 
-footer  {
+footer {
     background-color: #FFFD8C;
 }
 
@@ -176,7 +181,7 @@ h3 {
     grid-template-rows: 1fr 1fr;
     justify-content: space-between;
     max-width: 100%;
-  }
+}
 
 
 .calculator button {
@@ -192,11 +197,8 @@ h3 {
     justify-content: space-around;
 }
 
-/* TODO: Clean up code and add comments */
 
-/* Start of tablet styles */
-
-@media screen and  (min-width:768px) and (max-width:1920px) {
+@media screen and (min-width:768px) and (max-width:1920px) {
 
     .container {
         padding: 36px 82px;
@@ -221,7 +223,7 @@ h3 {
         text-align: center;
     }
 
-    .calculator  {
+    .calculator {
         grid-template-columns: 20% 40% 1fr;
         grid-template-rows: 1fr;
         grid-gap: 15px;
@@ -240,8 +242,8 @@ h3 {
 @media screen and (min-width: 1920px) {
 
     .container {
-        padding: 40px 140px;       
-    } 
+        padding: 40px 140px;
+    }
 
     h1 {
         font-size: 80px;
@@ -251,36 +253,29 @@ h3 {
     .bannercontent {
         display: grid;
         grid-template-columns: 25% 6% 37% 7% 25%;
-        grid-template-rows: 2fr 2fr;
+        grid-template-rows: 1fr;
         height: 630px;
         margin: 30px 0;
     }
 
-    section::after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-
-    h1  {
+    .titlebox {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
     }
 
-    .headercopy {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
-    }
 
     .scooter {
         width: 100%;
         grid-column: 2 / 5;
-        grid-row: 1 / 3;
+        grid-row: 1 / 2;
+
+        margin: 0;
     }
 
     .applybox {
         grid-column: 4 / 6;
-        grid-row: 1 / 3;
+        grid-row: 1 / 2;
+
     }
 
     .applybox p:nth-child(2) {
@@ -288,19 +283,19 @@ h3 {
     }
 
     input[type="text"],
-input[type="tel"],
-input[type="email"] {
-    height: 55px;
-    margin: 12px 0;
-}
+    input[type="tel"],
+    input[type="email"] {
+        height: 55px;
+        margin: 12px 0;
+    }
 
-.applybox p:last-child {
-    font-size: 15px;
-}
+    .applybox p:last-child {
+        font-size: 15px;
+    }
 
     footer .container {
         display: grid;
-        grid-template-columns: 3fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr 1fr;
         grid-template-rows: 1fr;
     }
 
@@ -309,28 +304,31 @@ input[type="email"] {
     }
 
     .calculator {
-        border: 2px solid red;
         grid-template-columns: 20% 40% 1fr;
         grid-template-rows: 1fr;
-        grid-gap: 15px;
     }
-    .calculator input, .calculator button {
+
+    .calculator input,
+    .calculator button {
         height: 40px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
 
     .socialmedia {
         grid-column: 3 / 4;
-        padding:  0;
+        padding: 0;
         align-items: center;
         justify-content: space-between;
-        
+
     }
 
-   /* TODO: RECHECK CODE, CLEANUP AND COMMENT */
+    /* TODO: RECHECK CODE, CLEANUP AND COMMENT 
+   calculator alignment*/
 
 
-    
+
 
 
 
