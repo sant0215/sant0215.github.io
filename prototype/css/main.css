@@ -411,8 +411,9 @@ footer p {
         font-size: 35px;
     }
 
-
-
+    .banner-main-box {
+        width: 700px;
+    }
 
     .news-items {
         display: grid;
@@ -498,15 +499,13 @@ footer p {
 
     .container {
         max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
 
-    .banner-text-box {
-        max-width: 1200px;        
+    .banner-main-box {
+        width: 1200px;
     }
-
 
     .news-items {
         display: grid;
