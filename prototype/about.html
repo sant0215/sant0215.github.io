@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,19 +15,19 @@
 </head>
 
 <body>
-
-    <!-- The wrapper class ensures the section backgrounds remain fullwidth as the container class contains the content within set boundaries -->
     <header>
+
         <div class="header-container">
             <div class="mobile-nav">
                 <a href="index.html">
                     <img src="images/lucky-logo.svg" alt="Lucky Plaza Logo" class="logo">
                 </a>
 
+                <!-- This is a horizontal menu that is only visible on larger screens -->
                 <ul class="desktop-menu">
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">What's New</a></li>
-                    <li><a href="#">Shopping</a></li>
+                    <li><a href="under-construction.html">What's New</a></li>
+                    <li><a href="under-construction.html">Shopping</a></li>
                     <li><a href="location.html">Location</a></li>
                     <li>
                         <ul class="social">
@@ -38,14 +36,19 @@
                         </ul>
                     </li>
                 </ul>
+
+                <!-- This hamburger menu icon calls the menuToggle() function when clicked, which toggles the display attribute of the the menuItems element -->
                 <a href="javascript:void(0);" class="icons hamburger" onclick="menuToggle()"><i
                         class="im im-menu"></i></a>
             </div>
+
+            <!-- This is the vertical menu that will be visible for smaller screens -->
             <div class="nav-menu">
                 <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">What's New</a></li>
-                    <li><a href="#">Shopping</a></li>
+                    <li><a href="under-construction.html">What's New</a></li>
+                    <li><a href="under-construction.html">Shopping</a></li>
                     <li><a href="location.html">Location</a></li>
                     <li>
                         <ul class="social">
@@ -56,7 +59,7 @@
                 </ul>
             </div>
 
-
+            <!-- This function toggles the vertical menu visibility by changing the display attribute of the menuItems element -->
             <script>
                 function menuToggle() {
                     var x = document.getElementById("menuItems");
@@ -70,79 +73,78 @@
             </script>
         </div>
 
-        <!-- TO DO: COME BACK TO THIS LATER PLEASE -->
-</div>
-</header>
-        <main>
-            <section class="about-banner">
-                <h2 class="container">About Lucky Plaza</h3>
-            </section>
-            <div class="container">               
-                <section class="about-story">
-                    <p class="about-intro">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
-                    </p>
-                    <div class="about-picture-box">
+    </header>
 
-                        <img src="https://via.placeholder.com/470x470" alt="">
-                        <div class="about-picture-content">
-                            
-                            <h3>Lorem Ipsum Dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                                sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                                ipsum dolor sit amet.
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                                dolores et.</p>
-                            </div>
-                        </div>
-                        </section>
+    <main>
 
+        <section class="about-banner">
+            <div class="container">
+                <h2>About Lucky Plaza</h3>
             </div>
-        </main>
-        <footer>
-            <div class="widgets">
-                    <div class="widgets-grid container">
-                        <h3>Connect</h3>
-                        <ul class="social">
-                            <li><a href="#"><i class="im im-facebook"></i></a></li>
-                            <li><a href="#"><i class="im im-instagram"></i></a></li>
-                        </ul>
-                        <h3>Sitemap</h3>
-                        <ul class="sitemap">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="under-construction.html">What's New</a></li>
-                            <li><a href="under-construction.html">Shopping</a></li>
-                            <li><a href="location.html">Location</a></li>
-                        </ul>
-                        <h3>Contact Us</h3>
-                        <p>
-                            304 Orchard Road <br>
-                            #06-50 Lucky Plaza<br>
-                            Singapore 238863<br><br>
-                            <a href="#">feedback@luckyplaza.com.sg</a>
-                        </p>
+        </section>
+
+        <div class="container">
+            <!-- The content is divided into 2 parts: about-story which will retain its general layout througout different screen sizes, and about-picture-box, which will change -->
+            <section class="about-story">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+                </p>
+
+                <div class="about-picture-box">
+                    <img src="images/about-320.jpg" alt="Singapore Street" srcset="images/about-320.jpg 480w,
+                                    images/about-480.jpg 720w">
+
+                    <div class="about-picture-content">
+                        <h3>Lorem Ipsum Dolor</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.</p>
                     </div>
-            </div>
-            <div class="copyright container">
-                <p>&copy; 2021 Lucky Plaza. All Rights Reserved</p>
-            </div>
-        </footer>
-    
+                </div>
+            </section>
         </div>
-    
-    </body>
-    
-    </html>
+        
+    </main>
+
+    <footer>
+
+        <div class="widgets">
+            <!-- Each widget is container in a widgets-box that becomes the direct children of the widgets-items grid container -->
+            <div class="widgets-items container">
+                <div class="widgets-box">
+                    <h3>Connect</h3>
+                    <ul class="social">
+                        <li><a href="#"><i class="im im-facebook"></i></a></li>
+                        <li><a href="#"><i class="im im-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="widgets-box">
+                    <h3>Sitemap</h3>
+                    <ul class="sitemap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="under-construction.html">What's New</a></li>
+                        <li><a href="under-construction.html">Shopping</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="widgets-box">
+                    <h3>Contact Us</h3>
+                    <p>
+                        304 Orchard Road <br>
+                        #06-50 Lucky Plaza<br>
+                        Singapore 238863<br><br>
+                        <a href="#">feedback@luckyplaza.com.sg</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright container">
+            <p>&copy; 2021 Lucky Plaza. All Rights Reserved</p>
+        </div>
+
+    </footer>
+</body>
+</html>

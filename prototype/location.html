@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,100 +17,111 @@
 
 <body>
 
-    <!-- The wrapper class ensures the section backgrounds remain fullwidth as the container class contains the content within set boundaries -->
-    <div class="wrapper">
-        <header>
-            <div class="header-container">
-                <div class="mobile-nav">
-                    <a href="index.html">
-                        <img src="images/lucky-logo.svg" alt="Lucky Plaza Logo" class="logo">
-                    </a>
+    <header>
 
-                    <a href="javascript:void(0);" class="icons" onclick="menuToggle()"><i class="im im-menu"></i></a>
-                </div>
-                <div class="nav-menu">
-                    <ul id="menuItems">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">What's New</a></li>
-                        <li><a href="#">Shopping</a></li>
-                        <li><a href="about.html">Location</a></li>
-                        <li>
-                            <ul class="social">
-                                <li><i class="im im-facebook"></i></li>
-                                <li><i class="im im-instagram"></i></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+        <div class="header-container">
+            <div class="mobile-nav">
+                <a href="index.html">
+                    <img src="images/lucky-logo.svg" alt="Lucky Plaza Logo" class="logo">
+                </a>
 
+                <!-- This is a horizontal menu that is only visible on larger screens -->
+                <ul class="desktop-menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="under-construction.html">What's New</a></li>
+                    <li><a href="under-construction.html">Shopping</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li>
+                        <ul class="social">
+                            <li><a href="#"><i class="im im-facebook"></i></a></li>
+                            <li><a href="#"><i class="im im-instagram"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-                <script>
-                    function menuToggle() {
-                        var x = document.getElementById("menuItems");
-
-                        if (x.style.display === "block") {
-                            x.style.display = "none";
-                        } else {
-                            x.style.display = "block";
-                        }
-                    }
-                </script>
+                <!-- This hamburger menu icon calls the menuToggle() function when clicked, which toggles the display attribute of the the menuItems element -->
+                <a href="javascript:void(0);" class="icons hamburger" onclick="menuToggle()"><i
+                        class="im im-menu"></i></a>
             </div>
 
-            <!-- TO DO: COME BACK TO THIS LATER PLEASE -->
-    </div>
+            <!-- This is the vertical menu that will be visible for smaller screens -->
+            <div class="nav-menu">
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="under-construction.html">What's New</a></li>
+                    <li><a href="under-construction.html">Shopping</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li>
+                        <ul class="social">
+                            <li><a href="#"><i class="im im-facebook"></i></a></li>
+                            <li><a href="#"><i class="im im-instagram"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- This function toggles the vertical menu visibility by changing the display attribute of the menuItems element -->
+            <script>
+                function menuToggle() {
+                    var x = document.getElementById("menuItems");
+
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+
     </header>
+
     <main>
+        <!-- This is the full-width embed from Google Maps -->
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7841844172794!2d103.83175621475398!3d1.3045455990485233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19926d6211eb%3A0xd76b3a1adceec494!2sLucky%20Plaza!5e0!3m2!1sen!2sph!4v1615561129489!5m2!1sen!2sph"
             width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" class="google-map"></iframe>
+
         <div class="container">
             <section class="getting-here">
                 <h2>How to get here?</h2>
-                <div class="vehicles-box">
-
-                    <div class="vehicles">
-                        <img src="https://via.placeholder.com/300x150" alt="">
+                <!-- Each vehicle will be contained in a child box with the main vehicles-items parent as a grid -->
+                <div class="vehicles-items">
+                    <div class="vehicles-box">
+                        <img src="images/train.jpg" alt="Train">
                         <h3>By Train</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.
                         </p>
                     </div>
-                    <div class="vehicles">
-                        <img src="https://via.placeholder.com/300x150" alt="">
+                    <div class="vehicles-box">
+                        <img src="images/bus.jpg" alt="Bus">
                         <h3>By Bus</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.
                         </p>
                     </div>
-                    <div class="vehicles">
-                        <img src="https://via.placeholder.com/300x150" alt="">
+                    <div class="vehicles-box">
+                        <img src="images/car.jpg" alt="Car">
                         <h3>By Car</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.
                         </p>
                     </div>
-                    <div class="vehicles">
-                        <img src="https://via.placeholder.com/300x150" alt="">
+                    <div class="vehicles-box">
+                        <img src="images/lorry.jpg" alt="Lorry">
                         <h3>By Lorry</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.
                         </p>
                     </div>
                 </div>
             </section>
         </div>
+
         <section class="feedback">
             <div class="feedback-box container">
-
                 <h2>Feedback Form</h2>
                 <div class="feedback-content">
                     <div class="feedback-copy">
@@ -125,9 +135,6 @@
                             process my own personal information set out in this form.
                         </p>
                     </div>
-
-
-
                     <div class="feedback-form-box">
                         <form class="feedback-form" action="#" method="get">
                             <div class="text-inputs">
@@ -149,19 +156,23 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
 
     </main>
     <footer>
+
         <div class="widgets">
-                <div class="widgets-grid container">
+            <!-- Each widget is container in a widgets-box that becomes the direct children of the widgets-items grid container -->
+            <div class="widgets-items container">
+                <div class="widgets-box">
                     <h3>Connect</h3>
                     <ul class="social">
                         <li><a href="#"><i class="im im-facebook"></i></a></li>
                         <li><a href="#"><i class="im im-instagram"></i></a></li>
                     </ul>
+                </div>
+                <div class="widgets-box">
                     <h3>Sitemap</h3>
                     <ul class="sitemap">
                         <li><a href="index.html">Home</a></li>
@@ -170,6 +181,8 @@
                         <li><a href="under-construction.html">Shopping</a></li>
                         <li><a href="location.html">Location</a></li>
                     </ul>
+                </div>
+                <div class="widgets-box">
                     <h3>Contact Us</h3>
                     <p>
                         304 Orchard Road <br>
@@ -178,14 +191,14 @@
                         <a href="#">feedback@luckyplaza.com.sg</a>
                     </p>
                 </div>
+            </div>
         </div>
+
         <div class="copyright container">
             <p>&copy; 2021 Lucky Plaza. All Rights Reserved</p>
         </div>
+
     </footer>
-
-    </div>
-
 </body>
 
 </html>
