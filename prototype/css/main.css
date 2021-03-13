@@ -172,6 +172,7 @@ section {
     align-items: flex-end;
 }
 
+/* CSS animations only work on mobile when the encapsulating div is displayed as a block*/
 .banner-text-box {
     display: block;
     margin: 0 2em;
