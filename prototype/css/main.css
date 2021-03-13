@@ -163,7 +163,7 @@ section {
     margin-left: 20px;
 }
 
-/* BANNER */
+/* BANNER --------------------------- */
 
 .banner {
     background: #FFD31A url(../images/banner-wide.jpg) no-repeat center top;
@@ -175,6 +175,29 @@ section {
 .banner-text-box {
     margin: 0 2em;
     padding: 0 0 200px 0;
+}
+
+/* ANIMATION KEYFRAMES --------------------------- */
+
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+/* ANIMATION CLASSES --------------------------- */
+
+.fade-up {
+    animation-name: fadeup;
+    animation-duration: 1.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
 
 /* WHATS NEW --------------------------- */
@@ -211,8 +234,16 @@ section {
     padding: 10px 0;
 }
 
+/* Adds a transition effect behind the arrow-button links */
+.arrow-button {
+    width: 50%;
+    transition: 0.7s;
+}
+
 .arrow-button:hover {
     background-color: #FFD31A;
+    width: 100%;
+    
 }
 
 .im-arrow-right {
@@ -296,6 +327,7 @@ button {
     margin: 20px 0;
     background-color: rgba(255, 255, 255, 1);
     padding: 10px;
+    transition: 0.6s;
 }
 
 button:hover {
@@ -364,6 +396,10 @@ footer p {
 }
 
 /* LOCATION ---------------------------- */
+
+iframe {
+    width: 100%;
+}
 
 .vehicles-items {
     margin: 50px 0;
@@ -480,6 +516,20 @@ footer p {
         justify-content: flex-end;
         align-items: center;
     }
+
+    /* Adds a underlining transition effect for the nav menu items. display: block for the ::after selector ensures that the content:'' attribute appears under the link, and not next to it  */
+    .desktop-link::after {
+        background: #FFD31A;
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        transition: 0.6s;
+    }
+
+    .desktop-link:hover::after {
+        width: 100%;
+      }
 
     .desktop-menu li {
         margin: 0 10px;

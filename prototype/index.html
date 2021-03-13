@@ -28,10 +28,10 @@
 
                 <!-- This is a horizontal menu that is only visible on larger screens -->
                 <ul class="desktop-menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="under-construction.html">What's New</a></li>
-                    <li><a href="under-construction.html">Shopping</a></li>
-                    <li><a href="location.html">Location</a></li>
+                    <li><a href="about.html" class="desktop-link">About</a></li>
+                    <li><a href="under-construction.html" class="desktop-link">What's New</a></li>
+                    <li><a href="under-construction.html" class="desktop-link">Shopping</a></li>
+                    <li><a href="location.html" class="desktop-link">Location</a></li>
                     <li>
                         <ul class="social">
                             <li><a href="#"><i class="im im-facebook"></i></a></li>
@@ -79,7 +79,8 @@
     <main>
 
         <section class="banner">
-            <div class="banner-text-box container">
+            <!-- Applies a fade-in animation to the banner text -->
+            <div class="banner-text-box container fade-up">
                 <h4>Now Available</h4>
                 <!-- The banner contains 2 inline-block elements to implement the styles. To prevent them from occupying the same line, the second element is contained in a separate div that fills the full content width. This also prevents the elements from being centered -->
                 <div class="banner-main-box">
@@ -97,7 +98,8 @@
                     <img src="images/news01-320.jpg" alt="Women Clothing" 
                     srcset="images/news01-320.jpg 480w,
                             images/news01-480.jpg 720w,
-                            images/news01-960.jpg 900w">
+                            images/news01-960.jpg 900w"
+                    sizes="(max-width: 900px) 480px, 720px">
                     <h3>Header Name Here</h3>
                     <p class="news-date">00 Jan 2021</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt lorem maisne cedulab.</p>
@@ -109,7 +111,8 @@
                     <img src="images/news02-320.jpg" alt="Delicious Food" 
                     srcset="images/news02-320.jpg 480w,
                             images/news02-480.jpg 720w,
-                            images/news02-960.jpg 900w">
+                            images/news02-960.jpg 900w"
+                    sizes="(max-width: 900px) 480px, 720px">
                     <h3>Header Name Here</h3>
                     <p class="news-date">00 Jan 2021</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt lorem maisne cedulab.</p>
@@ -121,7 +124,8 @@
                     <img src="images/news03-320.jpg" alt="Woman Smiling" 
                     srcset="images/news03-320.jpg 480w,
                             images/news03-480.jpg 720w,
-                            images/news03-960.jpg 900w">
+                            images/news03-960.jpg 900w"
+                    sizes="(max-width: 900px) 480px, 720px">
                     <h3>Header Name Here</h3>
                     <p class="news-date">00 Jan 2021</p>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt lorem maisne cedulab.</p>
@@ -138,7 +142,8 @@
                 <!-- This white-box will serve as the parent grid for the different layouts the content will have depending on the screen size. Its direct children will be the main image, and the text content, which are all contained in a separate div-->
                 <div class="white-box">
                     <img src="images/featuredbrand-mobile.jpg" alt="Bazaar 22 Fashion" srcset="images/featuredbrand-mobile.jpg 480w,
-                            images/featuredbrand-desktop.jpg 900w">
+                            images/featuredbrand-desktop.jpg 900w"
+                    sizes="(max-width: 900px) 480px">
                     <div class="brand-content">
                         <h3>Bazaar 22</h3>
                         <div class="featured-tags">

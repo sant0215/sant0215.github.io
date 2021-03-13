@@ -25,10 +25,10 @@
 
                 <!-- This is a horizontal menu that is only visible on larger screens -->
                 <ul class="desktop-menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="under-construction.html">What's New</a></li>
-                    <li><a href="under-construction.html">Shopping</a></li>
-                    <li><a href="location.html">Location</a></li>
+                    <li><a href="about.html" class="desktop-link">About</a></li>
+                    <li><a href="under-construction.html" class="desktop-link">What's New</a></li>
+                    <li><a href="under-construction.html" class="desktop-link">Shopping</a></li>
+                    <li><a href="location.html" class="desktop-link">Location</a></li>
                     <li>
                         <ul class="social">
                             <li><a href="#"><i class="im im-facebook"></i></a></li>
@@ -77,7 +77,7 @@
 
         <section class="about-banner">
             <div class="container">
-                <h2>About Lucky Plaza</h3>
+                <h2>About Lucky Plaza</h2>
             </div>
         </section>
 
@@ -92,8 +92,10 @@
                 </p>
 
                 <div class="about-picture-box">
-                    <img src="images/about-320.jpg" alt="Singapore Street" srcset="images/about-320.jpg 480w,
-                                    images/about-480.jpg 720w">
+                    <img src="images/about-320.jpg" alt="Singapore Street" 
+                    srcset="images/about-320.jpg 480w,
+                            images/about-480.jpg 720w"
+                    sizes="(max-width: 720px) 480px">
 
                     <div class="about-picture-content">
                         <h3>Lorem Ipsum Dolor</h3>
