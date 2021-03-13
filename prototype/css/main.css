@@ -245,7 +245,7 @@ section {
 .arrow-button:hover {
     background-color: #FFD31A;
     width: 100%;
-    
+
 }
 
 .im-arrow-right {
@@ -531,7 +531,7 @@ iframe {
 
     .desktop-link:hover::after {
         width: 100%;
-      }
+    }
 
     .desktop-menu li {
         margin: 0 10px;
@@ -553,7 +553,7 @@ iframe {
         display: grid;
         grid-template-columns: 420px 1fr;
     }
-    
+
     .white-box img {
         height: 420px;
     }
