@@ -173,6 +173,7 @@ section {
 }
 
 .banner-text-box {
+    display: block;
     margin: 0 2em;
     padding: 0 0 200px 0;
 }
