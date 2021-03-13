@@ -47,9 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+/* CUSTOM STYLES BEGIN HERE --------------------------- */
 
+/* MOBILE STYLES --------------------------- */
 
-/* -------------------------------------------- */
 html {
     font-family: 'Raleway', sans-serif;
 }
@@ -66,10 +67,17 @@ img {
     margin: 20px 36px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+
 h1 {
     font-size: 32px;
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
     background-color: #FFD31A;
     padding: 1rem;
@@ -81,7 +89,6 @@ h2 {
     color: white;
     font-size: 20px;
     font-weight: 800;
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
     background-color: black;
     padding: 1rem;
@@ -92,26 +99,21 @@ h2 {
 h3 {
     font-size: 19px;
     font-weight: 700;
-    text-transform: uppercase;
 }
-
 
 h4 {
     color: white;
     font-size: 14px;
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
     background-color: black;
     padding: 1rem;
     display: inline-block;
 }
 
-
 p {
     line-height: 2em;
 }
-
 
 a {
     text-decoration: none;
@@ -119,7 +121,6 @@ a {
     text-transform: uppercase;
     font-weight: 500;
 }
-
 
 li {
     margin: 10px 0;
@@ -129,26 +130,24 @@ section {
     padding: 40px 0;
 }
 
-
-
-/* NAV */
-
+/* NAVIGATION BAR --------------------------- */
 
 .logo {
     width: 144px;
 }
 
-
-.mobile-nav {
+/* The main-nav keeps the logo and the menu on the opposite ends of the div. This applies to either form the menu has according to screen size */
+.main-nav {
     display: flex;
     justify-content: space-between;
-    
 }
 
+/* This hides the desktop menu in mobile and tablet views */
 .desktop-menu {
     display: none;
 }
 
+/* This is the default state of the element for the menuToggle() function to work properly */
 #menuItems {
     display: none;
     text-align: right;
@@ -164,8 +163,6 @@ section {
     margin-left: 20px;
 }
 
-
-
 /* BANNER */
 
 .banner {
@@ -180,17 +177,7 @@ section {
     padding: 0 0 200px 0;
 }
 
-
-
-
-
-
-
-
-
-
-/* WHATS NEW */
-
+/* WHATS NEW --------------------------- */
 
 .whats-new h2 {
     margin-bottom: 0;
@@ -207,6 +194,7 @@ section {
 .news-box img {
     object-fit: cover;
 }
+
 .news-date {
     font-size: 1.2rem;
 }
@@ -215,7 +203,8 @@ section {
     width: 100%;
 }
 
-.arrow-button a{
+/* Universal styles for links with Arrow icons next to them */
+.arrow-button a {
     display: flex;
     align-items: center;
     margin: 20px 0;
@@ -230,9 +219,7 @@ section {
     padding-left: 10px;
 }
 
-
-/* FEATURED BRAND */
-
+/* FEATURED BRAND --------------------------- */
 
 .featured-brand {
     background: #FFD31A url(../images/featured-bg.jpg) no-repeat center;
@@ -242,6 +229,7 @@ section {
     background-color: white;
 }
 
+/* Prevents the image from stretching */
 .white-box img {
     height: 300px;
     object-fit: cover;
@@ -252,11 +240,12 @@ section {
     padding: 20px;
 }
 
+/* The flex allows the icon to properly align with the text */
 .featured-tags {
     display: flex;
     align-items: center;
     margin: 10px 0;
-    text-transform: upper;
+    text-transform: uppercase;
 }
 
 .featured-tags .im {
@@ -268,13 +257,13 @@ section {
 }
 
 
-/* NEWSLETTER */
+/* NEWSLETTER --------------------------- */
 
 label {
     display: none;
 }
 
-input, 
+input,
 textarea {
     border: none;
     background-color: #F4F4F5;
@@ -287,12 +276,11 @@ textarea {
     font-size: inherit;
 }
 
+/* This textarea is found in the Location page, but declarations are made here for consistency */
 textarea {
     padding: 15px;
     height: 250px;
-    font-size: inherit;
     resize: vertical;
-
 }
 
 button {
@@ -306,7 +294,7 @@ button {
     font-weight: 500;
     border: none;
     margin: 20px 0;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255, 255, 255, 1);
     padding: 10px;
 }
 
@@ -314,7 +302,7 @@ button:hover {
     background-color: #FFD31A;
 }
 
-/* FOOTER */
+/* FOOTER --------------------------- */
 
 .widgets {
     padding: 20px 0;
@@ -322,11 +310,11 @@ button:hover {
     color: white;
 }
 
-
 .widgets a {
     color: white;
     text-transform: none;
 }
+
 .widgets a:hover {
     color: #FFD31A;
 }
@@ -354,36 +342,28 @@ footer p {
     padding: 30px 0;
 }
 
-
-/* ABOUT------------------------- */
-
-
+/* ABOUT PAGE ------------------------- */
 
 .about-banner {
     background: #FFD31A url(../images/about-banner.jpg) no-repeat center;
     text-align: center;
 }
 
-
-
 .about-story {
     text-align: center;
 }
 
+/* The first sentence of the About page is slightly larger than the rest of the paragraphs */
 .about-story p:nth-child(1) {
     font-size: 1.3em;
     margin: 20px 0;
 }
 
-
 .about-story img {
     margin: 30px 0;
 }
 
-
 /* LOCATION ---------------------------- */
-
-
 
 .vehicles-items {
     margin: 50px 0;
@@ -406,11 +386,16 @@ footer p {
     padding: 20px;
 }
 
+/* PLACEHOLDER UNDER CONSTRUCTION PAGE --------------------------- */
+
 .under-construction {
-    padding: 300px 0 ;
+    padding: 300px 0;
     text-align: center;
 }
 
+/* END OF MOBILE STYLES --------------------------- */
+
+/* TABLET STYLES --------------------------- */
 
 @media screen and (min-width:767px) and (max-width: 1279px) {
 
@@ -427,14 +412,16 @@ footer p {
         width: 700px;
     }
 
+    /* News articles will be put in a 2-column grid */
     .news-items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 16px;
     }
 
+    /* Hides the 3rd news article to keep consistency */
     .news-box:nth-child(3) {
-        display: none;        
+        display: none;
     }
 
     .brand-content {
@@ -443,41 +430,48 @@ footer p {
 
     .white-box img {
         height: 600px;
-        object-fit: cover;
-        object-position: top;
     }
 
-    .widgets-items  {
+    /* Moves the widgets in a 3-column grid for larger screens */
+    .widgets-items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
- 
+    /* LOCATION --------------------------- */
 
-    /* location */
+    /* Divides the vehicles section into 2 columns, as well as the text inputs for the feedback form */
     .vehicles-items,
     .text-inputs {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 16px;
     }
-
-
 }
 
+/* END OF TABLET STYLES --------------------------- */
+
+/* DESKTOP STYLES --------------------------- */
+
 @media screen and (min-width:1280px) {
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
     h1 {
         font-size: 39px;
     }
-    
+
     h4 {
         font-size: 35px;
     }
 
-    .mobile-nav {
-        display: flex;
-        align-items: center;
+    /* Ensures the mobile menu stays hidden in the event that the screensize increases while .nav-menu is left open*/
+    .nav-menu,
+    .hamburger {
+        display: none;
     }
 
     .desktop-menu {
@@ -491,33 +485,22 @@ footer p {
         margin: 0 10px;
     }
 
-    .hamburger,
-    #menuItems {
-        display: none;
-    }
-
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-
     .banner-main-box {
         width: 1200px;
     }
 
+    /* Arranges the news articles into a 3-column grid */
     .news-items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 16px;
     }
 
+    /* Arranges the featured brand into a 2-column grid while ensuring the image remains a static size */
     .white-box {
         display: grid;
         grid-template-columns: 420px 1fr;
     }
-
     
     .white-box img {
         height: 420px;
@@ -527,9 +510,9 @@ footer p {
         padding: 80px;
     }
 
+    /* Arranges the newsletter section to have the body text on the left while the form on the right */
     .newsletter-box {
         display: grid;
-        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -537,17 +520,19 @@ footer p {
         padding: 20px 0 80px 0;
     }
 
-    .widgets-items  {
+    /* Applies the same 3-column structure like in the tablet view */
+    .widgets-items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /* ABOUT --------------------------- */
 
     .about-story {
         margin: 50px 0;
     }
 
-
+    /* Keeps the 2 starting paragraphs in the center without becoming too wide */
     .about-story p:nth-child(1),
     .about-story p:nth-child(2) {
         max-width: 800px;
@@ -555,10 +540,11 @@ footer p {
         margin-right: auto;
     }
 
+    /* Allows the image to occupy the left side of the page with the content on the other */
     .about-picture-box {
-        margin-top: 100px;
         display: grid;
         grid-template-columns: 500px 1fr;
+        margin-top: 100px;
     }
 
     .about-picture-box img {
@@ -570,6 +556,9 @@ footer p {
         text-align: left;
     }
 
+    /* LOCATION --------------------------- */
+
+    /* Applies a 2-column grid on the vehicles section, the feedback form, and the 2 text inputs inside the form */
     .vehicles-items,
     .text-inputs,
     .feedback-content {

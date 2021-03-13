@@ -18,7 +18,7 @@
     <header>
 
         <div class="header-container">
-            <div class="mobile-nav">
+            <div class="main-nav">
                 <a href="index.html">
                     <img src="images/lucky-logo.svg" alt="Lucky Plaza Logo" class="logo">
                 </a>
@@ -38,8 +38,7 @@
                 </ul>
 
                 <!-- This hamburger menu icon calls the menuToggle() function when clicked, which toggles the display attribute of the the menuItems element -->
-                <a href="javascript:void(0);" class="icons hamburger" onclick="menuToggle()"><i
-                        class="im im-menu"></i></a>
+                <a href="javascript:void(0);" class="icons hamburger" onclick="menuToggle()"><i class="im im-menu"></i></a>
             </div>
 
             <!-- This is the vertical menu that will be visible for smaller screens -->
@@ -63,7 +62,6 @@
             <script>
                 function menuToggle() {
                     var x = document.getElementById("menuItems");
-
                     if (x.style.display === "block") {
                         x.style.display = "none";
                     } else {
