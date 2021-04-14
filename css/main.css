@@ -70,7 +70,8 @@ img {
 
 /* MOBILE STYLES ------------------------------------- */
 
-.container {
+.container,
+.header-container {
     margin: 0 2em;
 }
 
@@ -327,6 +328,10 @@ textarea {
         margin: 0 auto;
     }
 
+    .header-container {
+        margin: 0 4em;
+    }
+
     h1 {
         font-size: 72px;
     }
@@ -418,6 +423,10 @@ textarea {
     .container {
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    .header-container {
+        margin: 0 4em;
     }
 
     h1 {
