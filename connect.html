@@ -8,69 +8,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 
-    <!-- <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"> -->
-
     <script src="https://kit.fontawesome.com/67fbfc3b6f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/main.css">
-    <title>hansan.515 creatives - Home</title>
+    <title>hansan.515 creatives - Connect</title>
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <div class="header-container">
-            <div class="main-nav">
-                <a href="index.html">
-                    <img src="images/logo.svg" alt="hansan.515 creatives Logo" class="logo">
-                </a>
+    <div class="container">
 
-                <!-- This hamburger menu icon calls the menuToggle() function when clicked, which toggles the display attribute of the the menuItems element -->
-                <a href="javascript:void(0);" class="icons hamburger" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-            </div>
+        <header>
 
+            <div class="header-container">
+                <div class="main-nav">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="hansan.515 creatives Logo" class="logo">
+                    </a>
 
-            <div class="nav-menu">
-                <ul id="menuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="connect.html">Connect</a></li>
-                </ul>
-            </div>
+                    <a href="javascript:void(0);" class="icons hamburger" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+                </div>
 
-            <!-- This function toggles the vertical menu visibility by changing the display attribute of the menuItems element -->
-            <script>
-                function menuToggle() {
-                    var x = document.getElementById("menuItems");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
+                <div class="nav-menu">
+                    <ul id="menuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="connect.html">Connect</a></li>
+                    </ul>
+                </div>
+
+                <script>
+                    function menuToggle() {
+                        var x = document.getElementById("menuItems");
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "block";
+                        }
                     }
-                }
-            </script>
-        </div>
-
-    </header>
-        
-
-        <section class="lets-connect">
-            <div class="connect-content">
-
-                <h2>Let's Connect.</h2>
-                <p>If you're interested in my work, feel free to reach me through this form. You can also check out my social media for updates and latest works.</p>
-                <ul class="socials">
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fab fa-artstation"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-soundcloud"></i></a></li>
-                </ul>
+                </script>
             </div>
 
-            <div class="connect-form-box">
-                <form class="connect-form" action="#" method="get">
-                    <div class="text-inputs">
+        </header>
+        
+        <main>
+            <section class="lets-connect">
+                <div class="connect-content">
+                    <h2>Let's Connect.</h2>
+                    <p>If you're interested in my work, feel free to reach me through this form. You can also check out my social media for updates and latest works.</p>
+                    <ul class="socials">
+                        <li><a href="https://www.linkedin.com/in/hansan515/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://hannah515.artstation.com/" target="_blank"><i class="fab fa-artstation"></i></a></li>
+                        <li><a href="https://twitter.com/desperosolace" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="https://soundcloud.com/dessiedisconnects" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="connect-form-box">
+                    <form class="connect-form" action="#" method="get">
                         <div>
                             <label for="fullname">Full name</label>
                             <input type="text" id="fullname" placeholder="Full name">
@@ -79,33 +75,25 @@
                             <label for="emailadd">Email Address</label>
                             <input type="email" id="emailadd" placeholder="Email Address">
                         </div>
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Your Message..."></textarea>
-                    </div>
-                    <button type="submit">Send <i class="im im-arrow-right"></i></button>
-                </form>
-            </div>
-        </section>
-
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit">Send <i class="im im-arrow-right"></i></button>
+                    </form>
+                </div>
+            </section>      
+        </main>
         
+        <footer>            
+            <div class="copyright">
+                <hr>
+                <p>hansan.515 Creatives &copy; 2021, All Rights Reserved</p>
+            </div>
+        </footer>
 
-
-
-
-        <div class="copyright">
-            <hr>
-            <p>hansan.515 Creatives &copy; 2021, All Rights Reserved</p>
-    
-        </div>
     </div>
 
-
-
-    </body>
-
-
-    
 </body>
+
 </html>

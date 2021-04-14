@@ -165,11 +165,11 @@ header {
 }
 
 .banner {
-    height: 85vh;
+    height: 700px;
 }
 
 .banner-title {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 .hannah {
@@ -456,6 +456,10 @@ textarea {
         gap: 30px;
     }
 
+    .banner {
+        height: 600px;
+    }
+
     /* ------------------------ */
 
     .intro, .profile-main {
@@ -479,6 +483,10 @@ textarea {
     }
 
     /* ------------------------- */
+
+    .recent-work h2 {
+        font-size: 50px;
+    }
     .work-box {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -532,6 +540,7 @@ textarea {
     .main-portfolio {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        margin-bottom: 50px;
     }
 
     .portfolio-box {
@@ -542,7 +551,7 @@ textarea {
     }
 
     .portfolio-showcase h2 {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     
