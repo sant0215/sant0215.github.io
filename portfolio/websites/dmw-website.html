@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"> -->
+
+    <script src="https://kit.fontawesome.com/67fbfc3b6f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>hansan.515 creatives - Home</title>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="header-container">
+            <div class="main-nav">
+                <a href="../../index.html">
+                    <img src="../../images/logo.svg" alt="hansan.515 creatives Logo" class="logo">
+                </a>
+
+                <!-- This hamburger menu icon calls the menuToggle() function when clicked, which toggles the display attribute of the the menuItems element -->
+                <a href="javascript:void(0);" class="icons hamburger" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+            </div>
+
+
+            <div class="nav-menu">
+                <ul id="menuItems">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../profile.html">Profile</a></li>
+                    <li><a href="../../portfolio.html">Portfolio</a></li>
+                    <li><a href="../../connect.html">Connect</a></li>
+                </ul>
+            </div>
+
+            <!-- This function toggles the vertical menu visibility by changing the display attribute of the menuItems element -->
+            <script>
+                function menuToggle() {
+                    var x = document.getElementById("menuItems");
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+
+    </header>
+        
+        <section class="portfolio-main">
+            <h2>Portfolio</h2>
+            <p>
+                This is a compilation of my professional, hobby and academic work
+            </p>
+            <a href="../websites.html" class="button blk">Back</a>
+        </section>
+
+        <hr>
+        
+        <div class="portfolio-showcase">
+            <h2>DMW Website</h2>
+            <p>Design My Work is a job search website that focuses on work-for-hire freelance clients.</p>     
+        </div>
+        <img src="../../images/preview-dmw.jpg" alt="DMW Website Mockup">
+
+
+<a href="../connect.html" class="button blk">Back to Top</a>
+
+
+
+        <div class="copyright">
+            <hr>
+            <p>hansan.515 Creatives &copy; 2021, All Rights Reserved</p>
+    
+        </div>
+
+    </div>
+
+
+    </body>
+
+
+    
+</body>
+</html>

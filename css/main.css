@@ -1,0 +1,555 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM STYLES BEGIN HERE */
+
+:root {
+    --primary-color: #E90129;
+    --secondary-color: #0C0C0C;
+    --background-color: #F1EEE6;
+    --title-font: 'Roboto', sans-serif;
+    --body-font: 'Cabin', sans-serif;
+}
+
+html {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    margin: 0 2em;
+}
+
+h1  {
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+    font-size: 34px;
+    font-weight:  bold;
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+i:hover {
+    color: var(--primary-color);
+}
+
+.button,
+button {
+    width: 100%;
+    font-family: var(--title-font);
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    margin:  30px 0;
+}
+
+.blk {
+    background-color: var(--secondary-color);
+
+}
+
+hr {
+    border: 1px solid var(--secondary-color);
+    
+}
+
+.fab, .fas {
+    font-size: 30px;
+}
+
+/* ---------------------------------------------------------- */
+header {
+    padding: 2em 0;
+}
+
+.logo {
+    width: 80px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#menuItems {
+    display: none;
+    text-align: right;
+}
+
+#menuItems li{
+    margin: 20px 0;
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.banner {
+    height: 85vh;
+}
+
+.banner-title {
+    padding-top: 150px;
+}
+
+.hannah {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-decoration: underline;
+    padding: 20px;
+    margin: 1rem 0;
+}
+
+.banner-captions {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.banner-captions p {
+    margin-bottom: 20px;
+}
+
+
+/* --------------------------------------- */
+
+.intro {
+    padding: 50px 0;
+}
+.intro h2 {
+    padding: 20px 0;
+}
+
+.intro img {
+    margin-bottom: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    justify-content: space-evenly;
+}
+
+.socials li {
+    margin-right: 5px;
+}
+
+
+/* --------------------------------------- */
+
+.work-item img {
+    margin: 30px 0;
+}
+
+/* --------------------------------------- */
+
+.get-touch {
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.get-touch h2 {
+    font-size: 4rem;
+    color: white;
+    margin: 30px 0;
+}
+
+.get-touch .container {
+    padding: 30px 0;
+}
+
+.get-touch hr {
+    border: 1px solid var(--background-color);    
+    margin-top: 100px;
+}
+
+/* -------------------------------- */
+
+.copyright {
+    margin-bottom: 50px;
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+
+/* --------------------------------------------------------------- */
+
+.profile-main img, .profile-main h2 {
+    margin-bottom: 40px;
+}
+
+.stats-item{
+    margin: 50px 0;
+}
+.stats-item ul li {
+    margin: 6px 0;
+    line-height: 2em;
+}
+
+/* --------------------------------------------------------------- */
+
+.portfolio-main h2 {
+    font-size: 3.5rem;
+}
+.portfolio-categories img {
+    margin: 10px 0;
+}
+
+/* ----------------------------------- */
+
+label {
+    display: none;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: #F4F4F5;
+    height: 40px;
+    margin: 10px 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: var(--body-font);
+    font-size: inherit;
+}
+
+textarea {
+    padding: 15px;
+    height: 250px;
+    resize: vertical;
+}
+
+/* -------------------------- */
+
+.portfolio-showcase {
+    margin: 30px 0;
+}
+
+.portfolio-item img {
+    margin: 30px 0;
+}
+
+.web {
+    display: none;
+}
+
+
+@media screen and (min-width:767px) and (max-width: 1279px) {
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    /* ------------------------- */
+    
+
+    .banner {
+        height: 70vh;
+    }
+
+    .banner-title {
+        padding-top: 80px;
+    }
+
+    .banner-captions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* ------------------------------------- */
+
+    .socials {
+        width: 200px;
+        justify-content: space-between;
+    }
+
+    .button, button {
+        display: inline-block;
+        width: auto;
+        padding: 20px;
+    }
+    
+    /* --------------------------- */
+
+    .work-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows : 1fr 1fr;
+        gap: 30px 15px;
+        margin-bottom: 200px;
+    }
+
+
+    /* ------------------------------------------- */
+
+    .stats-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
+    /* ------------------------------- */
+
+    .portfolio-categories {
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .portfolio-categories img {
+        margin: 0;
+    }
+
+
+    /* ------------------------- */
+
+    .lets-connect h2 {
+        margin-bottom: 30px;
+    }
+
+    /* --------------------- */
+
+    .portfolio-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows : 1fr 1fr;
+        gap: 30px 15px;
+    }
+
+    .web {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1280px) {
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .button, button {
+        display: inline-block;
+        width: auto;
+        padding: 20px;
+    }
+    
+
+    /* ------------------------ */
+
+    .banner-title {
+        padding-top: 80px;
+    }
+    .banner-captions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* ------------------------ */
+
+    .intro, .profile-main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .intro-content, .profile-content {
+        width: 600px;
+    }
+    .intro img, .profile-main img {
+        width: 500px;
+        margin-left: 30px;
+    }
+
+    .socials {
+        width: 200px;
+        justify-content: space-between;
+    }
+
+    /* ------------------------- */
+    .work-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px 15px;
+        margin-bottom: 200px;
+    }
+
+    /* ------------------------------ */
+
+    .get-touch-box {
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* --------------------------------- */
+
+    .stats-box {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    /* ---------------------------- */
+
+    .portfolio-categories {
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px 20px;
+    }
+
+    /* ---------------------- */
+
+    .lets-connect {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+    }
+
+    .connect-content {
+        width: 500px;
+    }
+
+    .connect-form-box {
+        width: 550px;
+    }
+
+    /* ------------------------ */
+
+    .main-portfolio {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .portfolio-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows : 1fr 1fr;
+        gap: 30px 15px;
+    }
+
+    .portfolio-showcase h2 {
+        font-size: 60px;
+    }
+
+    
+    .mobile {
+        display: none;
+    }
+
+
+
+}
