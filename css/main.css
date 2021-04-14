@@ -460,7 +460,11 @@ textarea {
     }
 
     .banner {
-        height: 600px;
+        height: 650px;
+    }
+
+    .banner p {
+        font-size: 24px;
     }
 
     /* Styles for both the Homepage and Profile page main paragraphs*/
@@ -475,6 +479,11 @@ textarea {
     .intro-content, 
     .profile-content {
         width: 600px;
+    }
+
+    .intro-content p,
+    .profile-content p {
+        font-size: 24px;
     }
 
     .intro img, 
@@ -532,6 +541,10 @@ textarea {
 
     .connect-content {
         width: 500px;
+    }
+
+    .connect-content p {
+        font-size: 24px;
     }
 
     .connect-form-box {
