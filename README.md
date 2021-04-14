@@ -23,3 +23,6 @@ https://unsplash.com/
    Fonts:
    https://fonts.google.com/specimen/Roboto
    https://fonts.google.com/specimen/Cabin
+
+   Icons:
+   https://fontawesome.com/
