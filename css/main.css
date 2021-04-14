@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+/* --------------------------------------------------- */
+
 /* CUSTOM STYLES BEGIN HERE */
 
 :root {
@@ -65,6 +67,8 @@ html {
 img {
     width: 100%;
 }
+
+/* MOBILE STYLES ------------------------------------- */
 
 .container {
     margin: 0 2em;
@@ -111,7 +115,7 @@ i:hover {
 button {
     width: 100%;
     font-family: var(--title-font);
-    font-size: 30px;
+    font-size: 26px;
     text-decoration: none;
     font-weight: bold;
     background-color: var(--primary-color);
@@ -122,21 +126,22 @@ button {
     margin:  30px 0;
 }
 
+/* Alternate button colour, for lower priority CTAs */
 .blk {
     background-color: var(--secondary-color);
-
 }
 
 hr {
-    border: 1px solid var(--secondary-color);
-    
+    border: 1px solid var(--secondary-color);    
 }
 
+/* Icon sizes */
 .fab, .fas {
     font-size: 30px;
 }
 
-/* ---------------------------------------------------------- */
+/* HOMEPAGE ------------------------------------- */
+
 header {
     padding: 2em 0;
 }
@@ -172,6 +177,7 @@ header {
     padding-top: 120px;
 }
 
+/* My highlighted name in the banner */
 .hannah {
     display: inline-block;
     background-color: var(--primary-color);
@@ -191,12 +197,10 @@ header {
     margin-bottom: 20px;
 }
 
-
-/* --------------------------------------- */
-
 .intro {
     padding: 50px 0;
 }
+
 .intro h2 {
     padding: 20px 0;
 }
@@ -216,14 +220,9 @@ header {
     margin-right: 5px;
 }
 
-
-/* --------------------------------------- */
-
 .work-item img {
     margin: 30px 0;
 }
-
-/* --------------------------------------- */
 
 .get-touch {
     margin-top: 30px;
@@ -246,8 +245,6 @@ header {
     margin-top: 100px;
 }
 
-/* -------------------------------- */
-
 .copyright {
     margin-bottom: 50px;
 }
@@ -256,22 +253,23 @@ header {
     font-size: 14px;
 }
 
+/* PROFILE ------------------------------------- */
 
-/* --------------------------------------------------------------- */
-
-.profile-main img, .profile-main h2 {
+.profile-main img, 
+.profile-main h2 {
     margin-bottom: 40px;
 }
 
 .stats-item{
     margin: 50px 0;
 }
+
 .stats-item ul li {
     margin: 6px 0;
     line-height: 2em;
 }
 
-/* --------------------------------------------------------------- */
+/* PORTFOLIO ------------------------------------- */
 
 .portfolio-main h2 {
     font-size: 3.5rem;
@@ -280,7 +278,7 @@ header {
     margin: 10px 0;
 }
 
-/* ----------------------------------- */
+/* CONNECT ------------------------------------- */
 
 label {
     display: none;
@@ -289,7 +287,7 @@ label {
 input,
 textarea {
     border: none;
-    background-color: #F4F4F5;
+    background-color: white;
     height: 40px;
     margin: 10px 0;
     padding-left: 15px;
@@ -305,7 +303,7 @@ textarea {
     resize: vertical;
 }
 
-/* -------------------------- */
+/* PORTFOLIO CATEGORY ------------------------------------- */
 
 .portfolio-showcase {
     margin: 30px 0;
@@ -315,10 +313,12 @@ textarea {
     margin: 30px 0;
 }
 
+/* This function is to hide specific elements when in mobile view */
 .web {
     display: none;
 }
 
+/* TABLET STYLES ------------------------------------- */
 
 @media screen and (min-width:767px) and (max-width: 1279px) {
 
@@ -335,8 +335,7 @@ textarea {
         font-size: 50px;
     }
 
-    /* ------------------------- */
-    
+    /* HOMEPAGE ------------------------------------- */    
 
     .banner {
         height: 70vh;
@@ -346,13 +345,12 @@ textarea {
         padding-top: 80px;
     }
 
+    /* The two banner captions will occupy only 2 out of 3 columns */
     .banner-captions {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
     }
-
-    /* ------------------------------------- */
 
     .socials {
         width: 200px;
@@ -365,8 +363,6 @@ textarea {
         padding: 20px;
     }
     
-    /* --------------------------- */
-
     .work-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -375,17 +371,14 @@ textarea {
         margin-bottom: 200px;
     }
 
-
-    /* ------------------------------------------- */
+    /* PROFILE ------------------------------------- */
 
     .stats-box {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-
-
-    /* ------------------------------- */
+    /* PORTFOLIO ------------------------------------- */
 
     .portfolio-categories {
         margin: 40px 0;
@@ -398,14 +391,13 @@ textarea {
         margin: 0;
     }
 
-
-    /* ------------------------- */
+    /* CONNECT ------------------------------------- */
 
     .lets-connect h2 {
         margin-bottom: 30px;
     }
 
-    /* --------------------- */
+    /* PORTFOLIO CATEGORY ------------------------------------- */
 
     .portfolio-box {
         display: grid;
@@ -418,6 +410,8 @@ textarea {
         display: none;
     }
 }
+
+/* DESKTOP STYLES ------------------------------------- */
 
 @media screen and (min-width:1280px) {
 
@@ -442,14 +436,14 @@ textarea {
         display: inline-block;
         width: auto;
         padding: 20px;
-    }
-    
+    }    
 
-    /* ------------------------ */
+    /* HOMEPAGE ------------------------------------- */
 
     .banner-title {
         padding-top: 80px;
     }
+
     .banner-captions {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -460,19 +454,22 @@ textarea {
         height: 600px;
     }
 
-    /* ------------------------ */
-
-    .intro, .profile-main {
+    /* Styles for both the Homepage and Profile page main paragraphs*/
+    .intro, 
+    .profile-main {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
     }
 
-    .intro-content, .profile-content {
+    .intro-content, 
+    .profile-content {
         width: 600px;
     }
-    .intro img, .profile-main img {
+
+    .intro img, 
+    .profile-main img {
         width: 500px;
         margin-left: 30px;
     }
@@ -482,19 +479,16 @@ textarea {
         justify-content: space-between;
     }
 
-    /* ------------------------- */
-
     .recent-work h2 {
         font-size: 50px;
     }
+
     .work-box {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px 15px;
         margin-bottom: 200px;
     }
-
-    /* ------------------------------ */
 
     .get-touch-box {
         padding-top: 100px;
@@ -503,14 +497,14 @@ textarea {
         gap: 30px;
     }
 
-    /* --------------------------------- */
+    /* PROFILE ------------------------------------- */
 
     .stats-box {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
     }
 
-    /* ---------------------------- */
+    /* PORTFOLIO ------------------------------------- */
 
     .portfolio-categories {
         margin: 40px 0;
@@ -519,7 +513,7 @@ textarea {
         gap: 0px 20px;
     }
 
-    /* ---------------------- */
+    /* CONNECT ------------------------------------- */
 
     .lets-connect {
         display: flex;
@@ -535,14 +529,16 @@ textarea {
         width: 550px;
     }
 
-    /* ------------------------ */
+    /* PORTFOLIO CATEGORY ------------------------------------- */
 
+    /* This external grid contains both the portfolio category title div as well as the main 2x2 portfolio items grid to show them side by side */
     .main-portfolio {
         display: grid;
         grid-template-columns: 1fr 2fr;
         margin-bottom: 50px;
     }
 
+    /* The main 2x2 portfolio items grid */
     .portfolio-box {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -554,11 +550,8 @@ textarea {
         font-size: 40px;
     }
 
-    
+    /* This hides specific items when on desktop view */
     .mobile {
         display: none;
     }
-
-
-
 }
