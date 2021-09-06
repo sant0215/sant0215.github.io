@@ -7,7 +7,7 @@ Development-wise, it was quite simple as there weren't really a lot of images or
 Personally, I've been feeling a lot more comfortable with choosing between grid and flex after this project, which are my two favourite things I learned in this class. Custom properties also significantly sped up the process as well, eliminating the need to declare specific properties each time. The whole learning experience was quite enjoyable.
 
 
-
+:)
 Resources used:
 
 http://meyerweb.com/eric/tools/css/reset/ 
